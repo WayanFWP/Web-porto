@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?familu=Poppins:ght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    color: white;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 35px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    
+}
+
+
+.navbar a {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 70px;
+    transition: .3s;
+}
+
+.logo {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a:hover,
+.navbar {
+    color: turquoise;
+}
+
+.home {
+    height: 100vh;
+    padding: 2.5%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(-30deg, #cfd1d4 35%, rgba(15, 23, 42, 255) 5%);
+    justify-content: space-between;
+}
+
+.home-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    background: rgba(15, 23, 42, 255);
+    border-radius: 50%;
+    border: 25px solid white;
+    outline: 22px solid rgba(15, 23, 42, 255);
+
+}
+
+.home-image img {
+    position: relative;
+    bottom: 22px;
+    max-width: 240px;
+}
+
+.home-content {
+    max-width: 50%;
+}
+
+.home-content h1 {
+    font-size: 40px;
+    font-weight: 750;
+    line-height: 1.2;
+}
+
+.home-content h4 {
+    font-size: 25px;
+    font-weight: 600;
+    color: transparent;
+    -webkit-text-stroke: .5px white;
+    background-image: linear-gradient(rgba(15, 23, 42, 255),turquoise, white);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -700px 0;
+    animation: animateText 6s linear infinite;
+}
+
+@keyframes animateText{
+    0%,95%,100%{
+        background-position: -700px 0;
+    }
+    65%,85%{
+        background-position: 0 0;
+    }
+}
+
+.home-content p {
+    font-size: 16px;
+    margin: 50px 0 40px;
+
+}
+
+.home-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 80%;
+    background: transparent;
+    border: 2px solid turquoise;
+    border-radius: 8px;
+    font-size: 19px;
+    text-decoration: none;
+    color: turquoise;
+    font-weight: 500;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:hover {
+    color: black;
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: turquoise;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+
+}
+
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 155px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background: transparent;
+    border: 2px solid turquoise;
+    border-radius: 50%;
+    font-size: 22.5px;
+    color: turquoise;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+
+}
+
+.home-sci a:hover {
+    color: black;
+
+}
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: turquoise;
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+    color: rgb(0, 6, 27);
+}
+
+
+.about {
+    height: 100vh;
+    padding: 2.5%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(-30deg,#cfd1d4 1011.5px, rgba(15, 23, 42, 255) 10px);
+    justify-content: space-between;
+}
+
+.about h1{
+    
+}
+
+.skill {
+    height: 100vh;
+    padding: 2.5%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(-30deg, #cfd1d4 1011.5px, rgba(15, 23, 42, 255) 10px);
+    justify-content: space-between;
+}
+
+
+
+
+
+.contact {
+    height: 100vh;
+    padding: 2.5%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(-30deg, #cfd1d4 1011.5px, rgba(15, 23, 42, 255) 10px);
+    justify-content: space-between;
+}
